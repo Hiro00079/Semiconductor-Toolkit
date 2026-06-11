@@ -1,0 +1,68 @@
+Note: exclude main.py from antivirus and run it directly 
+
+📘 Semiconductor Toolkit – User Guide
+📌 Overview
+This application is a GUI-based toolkit for analyzing semiconductor devices.
+It supports:
+
+I-V analysis using Thermionic and Cheung methods
+
+Surface state density calculation
+
+🚀 How to Run the Application
+Double-click on SemiconductorToolkit.exe
+
+No installation needed — Python is not required
+
+If antivirus flags it, add the file to exclusions in McAfee or Defender
+
+🔬 Using the I-V Analyzer
+Click 📁 Load File → select .csv or Excel
+
+Enter Voltage and Current column numbers (1-based, e.g., A=1)
+
+Set:
+
+Temperature (K)
+
+Vmin / Vmax range
+
+Smoothing (optional)
+
+Method: Thermionic / Cheung
+
+Diode Type: n-type / p-type
+
+Click 📊 Analyze
+
+Click 🧠 Best Exponential Region to auto-select range
+
+Click 📝 Save to Word to export results and plots
+
+⚗️ Using the Surface State Analyzer
+Switch to Surface State tab
+
+Load your file
+
+Enter parameters:
+
+I₀ (A), Φb (eV)
+
+εᵢ, εₛ (relative permittivity)
+
+δ (cm), W_D (cm), T (K)
+
+Click Calculate Nss
+
+Click Export Results to save
+
+🛠 Known Issues
+Antivirus may falsely delete the .exe → add to exclusions
+
+Input file must be numeric (no missing rows or symbols)
+
+Export requires MS Word/Excel if .docx or .xlsx is selected
+
+👤 Credits
+Built with Python, Tkinter, Pandas, Matplotlib, SciPy
+Created by Pratham Kaushik (prathamk6000@gmail.com)
